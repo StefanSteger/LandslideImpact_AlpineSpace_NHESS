@@ -19,8 +19,8 @@ Alice Crespi<sup>[![](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16
 and
 Matthias Schlögl<sup>[![](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0002-4357-523X)</sup>
 (2025):
-**Impact-based early warning of mass movements – A dynamic spatial modelling approach for the Alpine region**.
-*EGUsphere* [preprint]. [doi:10.5194/egusphere-2025-4940](https://doi.org/10.5194/egusphere-2025-4940).
+**Dynamic spatial modelling of mass movement impacts for large areas: A data-driven framework for impact-based early warning**.
+*Natural Hazards and Earth System Sciences*. [doi:10.5194/egusphere-2025-4940](https://doi.org/10.5194/egusphere-2025-4940).
 
 
 ## Overview
