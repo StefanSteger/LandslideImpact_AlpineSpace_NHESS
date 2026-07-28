@@ -1,6 +1,6 @@
 ## -------------------------------------------------------------------------- ##
-# Script associated with Steger et al. (2025):
-# "Impact-based early warning of mass movements – A dynamic spatial modelling approach for the Alpine region"
+# Script associated with Steger et al. (2026):
+# "Dynamic spatial modelling of mass movement impacts for large areas: A data-driven framework for impact-based early warning"
 # doi: https://doi.org/10.5194/egusphere-2025-4940
 ## -------------------------------------------------------------------------- ##
 
