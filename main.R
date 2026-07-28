@@ -13,13 +13,9 @@
 # - Step 1: Load data and basic visualizations
 # - Step 2: Fit the models
 # - Step 3: Calculate fitting performance and plot ROC curves
-#           (Fig. 4a)
-# - Step 4: Cross validation: Snippet code for basin-based cross validation and
-#           visualizing final performance (Fig. 4a-d)
+# - Step 4: Cross validation: Snippet code for basin-based cross validation and visualizing final performance
 # - Step 5: Variable importance plots (incl. snippet for calculating feature importance)
-#           (Fig. 5)
 # - Step 6: Visualizing partial effects from fitted models
-#           (Figs. 6, Fig. 7, Fig. 8)
 
 ## -------------------------------------------------------------------------- ##
 ## Setup ----
@@ -229,7 +225,6 @@ fit_falls <- fit_gamm(formula = fo_falls, data = df_falls, nthreads = ncores)
 
 ## -------------------------------------------------------------------------- ##
 ## Step 3: Calculate fitting performance and plot ROC curves ----
-##         (Fig. 4a in publication)
 ## -------------------------------------------------------------------------- ##
 
 log_info("S3 » Assessing model performance")
@@ -369,7 +364,7 @@ cutpoints <- bind_rows(results$cutpoint_data) |>
   mutate(Process = factor(Process, levels = auc_labels$Process)) |>
   print()
 
-# Build ROC plot (Fig 4a) ====
+# Build ROC plot ====
 p_roc <- ggplot(roc_all, aes(x = FPR, y = TPR, color = Process)) +
   geom_line(linewidth = 1) + # ROC curves
   geom_abline(linetype = "dashed", color = "gray60") + # no-skill line
@@ -400,7 +395,6 @@ p_roc
 ## -------------------------------------------------------------------------- ##
 ## Step 4: Cross validation ----
 ##         Snippet code for basin-based CV and visualizing final performance
-##         (Fig. 4a-d in publication)
 ## -------------------------------------------------------------------------- ##
 
 log_info("S4 » Performing cross validation")
@@ -633,14 +627,13 @@ combined_plot <- (p_roc_tagged + p1_tagged) / (p2_tagged + p3_tagged) +
   # style tags
   theme(plot.tag = element_text(size = 16, face = "bold", hjust = 0, vjust = 1))
 
-log_info("-- » Creating composite performance plot (Fig. 4)")
+log_info("-- » Creating composite performance plot")
 print(combined_plot)
 
 
 ## -------------------------------------------------------------------------- ##
 ## Step 5: Variable importance plots ----
 ##         (incl. snippet code for calculating feature importance)
-##         (Fig. 5)
 ## -------------------------------------------------------------------------- ##
 
 log_info("S5 » Assessing variable importance")
@@ -689,7 +682,7 @@ print(varimpoDF)
 log_info("-- » RESULT: VI of fall-type model")
 print(varimpoRF)
 
-# create plots for variable importance w/ ggplot2 (Fig. 5) ====
+# create plots for variable importance w/ ggplot2 ====
 p_vi_1 <- ggplot(varimpoSL, aes(x = Importance, y = Variable)) +
   geom_point(color = cols, size = 3) + # point for importance
   geom_errorbarh(aes(xmin = Importance - StDev, xmax = Importance + StDev),
@@ -745,13 +738,12 @@ print(combined_plot)
 
 ## -------------------------------------------------------------------------- ##
 ## Step 6: Visualizing partial effects from fitted models ----
-##         (Fig. 6, Fig. 7, Fig. 8)
 ## -------------------------------------------------------------------------- ##
 
 # Partial effects created separately for SL, DF, RF using gratia::draw()
 log_info("S6 » Assessing partial effects")
 
-# Partial effect plot for slide-type from fitted model `fit_slides` (Fig. 6) ####
+# Partial effect plot for slide-type from fitted model `fit_slides` ####
 log_info("-- » Estimating partial effects for slide-type model")
 
 # get smooths
@@ -821,12 +813,12 @@ plots <- lapply(seq_along(plots), function(i) {
 # Combine plots with tags preserved (wrap_plots from patchwork)
 p_SL <- wrap_plots(plots, ncol = 4) + plot_layout(tag_level = "keep") # arrange into grid, 4 columns
 
-log_info("-- » Creating partial effects plot for slide-type model (Fig. 6)")
+log_info("-- » Creating partial effects plot for slide-type model")
 print(p_SL)
 
 ## -------------------------------------------------------------------------- ##
 
-# Partial effect plot for flow-type from fitted model `fit_flows` (Fig. 7)
+# Partial effect plot for flow-type from fitted model `fit_flows`
 log_info("-- » Estimating partial effects for slide-type model")
 
 # get smooths
@@ -888,12 +880,12 @@ plots <- lapply(seq_along(plots), function(i) {
 # Combine and keep tags for flow plots
 p_DF <- wrap_plots(plots, ncol = 4) + plot_layout(tag_level = "keep") # 4 columns layout
 
-log_info("-- » Creating partial effects plot for flow-type model (Fig. 7)")
+log_info("-- » Creating partial effects plot for flow-type model")
 print(p_DF)
 
 ## -------------------------------------------------------------------------- ##
 
-# Partial effect plot for fall-type from fitted model `fit_falls` (Fig. 8)
+# Partial effect plot for fall-type from fitted model `fit_falls`
 log_info("-- » Estimating partial effects for fall-type model")
 
 # get smooths
@@ -964,7 +956,7 @@ plots <- lapply(seq_along(plots), function(i) {
 # Combine and keep tags for fall-type partials (4 columns grid)
 p_RF <- wrap_plots(plots, ncol = 4) + plot_layout(tag_level = "keep")
 
-log_info("-- » Creating partial effects plot for slide-type model (Fig. 8)")
+log_info("-- » Creating partial effects plot for slide-type model")
 print(p_RF)
 
 ## End of script ------------------------------------------------------------ ##
