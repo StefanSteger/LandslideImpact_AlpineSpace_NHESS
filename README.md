@@ -41,7 +41,8 @@ The R code in this repository uses the provided data to:
 
 1. **Step 1:** Load data and create basic visualizations  
 2. **Step 2:** Fit the models  
-3. **Step 3:** Calculate fitting performance and plot ROC curves *(Fig. 4a in publication)*  
-4. **Step 4:** Cross validation: basin-based CV and visualization of final performance *(Fig. 4a–d)*  
-5. **Step 5:** Variable importance plots, including calculation examples *(Fig. 5)*  
-6. **Step 6:** Visualize partial effects from fitted models *(Fig. 6, 7, 8)*
+3. **Step 3:** Calculate fitting performance and plot ROC curves
+4. **Step 4:** Cross validation: basin-based CV and visualization of final performance
+5. **Step 5:** Variable importance plots, including calculation examples
+6. **Step 6:** Visualize partial effects from fitted models
+
