@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Steger"
+  given-names: "Stefan"
+  orcid: "https://orcid.org/0000-0003-0886-5191"
+- family-names: "Schlögl"
+  given-names: "Matthias"
+  orcid: "https://orcid.org/0000-0002-4357-523X"
+title: "Impact-based Early Warning of Mass Movements"
+version: 1.0
+doi: 10.5281/zenodo.21645145
+date-released: 2026-07-28
+url: "https://github.com/StefanSteger/LandslideImpact_AlpineSpace_NHESS"
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Steger"
+    given-names: "Stefan"
+    orcid: "https://orcid.org/0000-0003-0886-5191"
+  - family-names: "Spiekermann"
+    given-names: "Raphael"
+    orcid: "https://orcid.org/0000-0002-4772-9750"
+  - family-names: "Moreno"
+    given-names: "Mateo"
+    orcid: "https://orcid.org/0000-0002-9530-3076"
+  - family-names: "Lehner"
+    given-names: "Sebastian"
+    orcid: "https://orcid.org/0000-0002-7562-8172"
+  - family-names: "Enigl"
+    given-names: "Katharina"
+    orcid: "https://orcid.org/0000-0002-3263-0918"
+  - family-names: "Crespi"
+    given-names: "Alice"
+    orcid: "https://orcid.org/0000-0003-4186-8474"
+  - family-names: "Schlögl"
+    given-names: "Matthias"
+    orcid: "https://orcid.org/0000-0002-4357-523X"
+  doi: "10.5194/nhess-26-3637-2026"
+  journal: "Nat. Hazards Earth Syst. Sci."
+  month: 8
+  start: 3637
+  end: 3665
+  title: "Dynamic spatial modelling of mass movement impacts for large areas: a data-driven framework for impact-based early warning"
+  issue: 8
+  volume: 26
+  year: 2026
