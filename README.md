@@ -23,7 +23,7 @@ and
 Matthias Schlögl<sup>[![](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0002-4357-523X)</sup>
 (2026):
 **Dynamic spatial modelling of mass movement impacts for large areas: A data-driven framework for impact-based early warning**.
-*Natural Hazards and Earth System Sciences*, 26(8), 3637–3665. [doi:10.5194/egusphere-2025-4940](https://doi.org/10.5194/egusphere-2025-4940).
+*Natural Hazards and Earth System Sciences*, 26(8), 3637–3665. [doi:10.5194/nhess-26-3637-2026](https://doi.org/10.5194/nhess-26-3637-2026).
 
 
 ## Overview
