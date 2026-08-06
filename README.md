@@ -2,13 +2,13 @@
 
 <p align="center">
     <a href="https://doi.org/10.5194/nhess-26-3637-2026">
-        <img alt="Preprint DOI" src="https://img.shields.io/badge/Paper-10.5194%2Fnhess--26--3637--2026-sienna">
-    </a>
+        <img alt="Paper DOI" src="https://img.shields.io/badge/Paper-10.5194%2Fnhess--26--3637--2026-sienna?style=flat-square"></a>
     <a href="https://doi.org/10.6084/m9.figshare.30271795">
-        <img alt="Figshare DOI" src="https://img.shields.io/badge/Supplement-10.6084%2Fm9.figshare.30271795-blue">
-    </a>
+        <img alt="Figshare DOI" src="https://img.shields.io/badge/Supplement-10.6084%2Fm9.figshare.30271795-556472?style=flat-square&logo=figshare&logoColor=white"></a>
+    <a href="https://doi.org/10.5281/zenodo.21645145">
+        <img alt="ZENODO DOI" src="https://img.shields.io/badge/PID-doi:10.5281/zenodo.21645145-1682D4?style=flat-square&logo=zenodo&logoColor=white"></a>
     <a href="https://style.tidyverse.org">
-        <img alt="Code style: tidyverse" src="https://img.shields.io/badge/codestyle-tidyverse-darkblue">
+        <img alt="Code style: tidyverse" src="https://img.shields.io/badge/codestyle-tidyverse-1a162d?style=flat-square&logo=r&logoColor=white"></a>
     </a>
 </p>
 
